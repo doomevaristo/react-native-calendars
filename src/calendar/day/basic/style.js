@@ -19,7 +19,7 @@ export default function styleConstructor(theme = {}) {
       position: 'relative'
     },
     text: {
-      marginTop: Platform.OS === 'android' ? 4 : 6,
+      marginTop: 6,
       fontSize: appStyle.textDayFontSize,
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: appStyle.textDayFontWeight,
@@ -38,6 +38,9 @@ export default function styleConstructor(theme = {}) {
     },
     todayText: {
       color: appStyle.todayTextColor
+    },
+    weekendText: {
+      color: appStyle.weekendTextColor
     },
     selectedText: {
       color: appStyle.selectedDayTextColor
