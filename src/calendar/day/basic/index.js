@@ -133,9 +133,10 @@ export default class BasicDay extends Component {
       style.push(this.style.disabledText);
     } else if (this.isToday()) {
       style.push(this.style.todayText);
-    } else if (this.props.date.day.getDay() == 6 || this.props.date.day.getDay() == 0) {
-      style.push(this.style.weekendText);
+      // } else if (this.props.date.day.getDay() == 6 || this.props.date.day.getDay() == 0) {
+      //   style.push(this.style.weekendText);
     }
+    console.log(this.props.date.day);
 
     //Custom marking type
     if (this.isCustom() && customStyles && customStyles.text) {
